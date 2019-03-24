@@ -1,0 +1,366 @@
+@import "var.less";
+/*=============================================
+=            Доп.меню            =
+=============================================*/
+
+.global-menu-option {
+	max-width: 100%;
+	background-color: #f2f2f2;
+}
+.global-menu-option__wrapper {
+	max-width: @wrapper-1440;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+
+	padding: 8px 0;
+}
+
+.option-menu__link {
+	text-decoration: none;
+	font-family: @font-regular;
+	font-size: 12px;
+	color: @menu-color;
+	margin-right: 20px;
+}
+
+.option-menu__link:hover {
+	font-size: 12px;
+	color: #000;
+}
+
+.option-menu__link-first {
+	margin-left: auto;
+}
+
+/*=============================================
+ =            Глобальное меню            =
+ =============================================*/
+
+.global-menu {
+	max-width: 100%;
+}
+
+.wrapper {
+	max-width: @wrapper-1440;
+	margin: 0 auto;
+}
+
+.wrapper-global-menu {
+	background-color: rgb(255, 255, 255);
+}
+
+.global-menu__item a {
+	text-decoration: none;
+}
+
+.globa-menu__items {
+	padding: 25px 20px;
+	display: flex;
+	align-items: center;
+}
+
+.global-menu__item--grow {
+	flex-grow: 1;
+}
+
+/**
+ *
+ * ЛОГОТИП МЕНЮ
+ *
+ */
+
+.global-menu__item--logotype {
+	display: flex;
+	align-items: center;
+	margin-right: 24px;
+}
+
+.global-menu__logotype-img {
+	max-width: 32px;
+	margin-right: 8px;
+}
+
+.global-menu__logotype-text {
+	font-family: @font-black;
+	font-size: 18px;
+	color: rgb(73, 73, 73);
+}
+
+.global-menu__logotype-text:hover {
+	color: #000;
+}
+
+/**
+ *
+ * Кнопка все услуги
+ *
+ */
+.global-menu__item--allservise-button {
+	display: none;
+	background: @accent-color;
+	padding: 8px 15px;
+	border-radius: 3px;
+	margin-right: 12px;
+}
+
+.global-menu__item--allservise-button:hover {
+	background: @accent-color__darken;
+	cursor: pointer;
+}
+
+.allservise-button-icon {
+	margin-right: 8px;
+}
+
+.allservise-button-text {
+	font-size: @menu-size;
+	font-family: @font-black;
+	color: #fff;
+}
+
+/**
+  *
+  * Пункты навигации глобальные
+  *
+  */
+
+.global-menu__item--navigation {
+	padding: 0 12px;
+}
+
+.global-menu__item--navigation a {
+	font-size: @menu-size;
+	font-family: @font-regular;
+	color: @menu-color;
+}
+
+.global-menu__item--navigation a:hover {
+	color: #000;
+}
+
+/**
+ *
+ * ЛЬГОТЫ КНОПКА
+ *
+ */
+
+.global-menu__item--sale-button {
+	border: 1px solid @menu-color-sale;
+	padding: 6px 16px;
+	border-radius: 3px;
+	font-size: @menu-size;
+	font-family: @font-regular;
+	color: @menu-color-sale;
+	cursor: pointer;
+	margin-right: 30px;
+	transition-duration: 0.3s;
+}
+
+.global-menu__item--sale-button:hover {
+	background-color: @accent-color;
+	border: 1px solid @accent-color;
+	color: #fff;
+}
+
+/**
+ *
+ * Адрес и телефон
+ *
+ */
+
+.global-menu__item--contact-item {
+	display: flex;
+	align-items: center;
+	font-size: @menu-size;
+	font-family: @font-regular;
+	margin-left: 20px;
+	color: @menu-color;
+}
+
+.contact-item--phone a {
+	font-size: @menu-size;
+	font-family: @font-bold;
+	margin-left: 8px;
+	color: rgb(106, 128, 224);
+}
+
+.contact-item__icon {
+	display: none;
+}
+
+/*=============================================
+=            Навигация зелёненькая            =
+=============================================*/
+
+.header-menu {
+	display: flex;
+}
+
+.header-menu__item {
+	font-size: @menu-size;
+	font-family: @font-regular;
+	color: #fff;
+	padding: 16px 20px;
+}
+
+.header-link {
+	color: #fff;
+	text-decoration: none;
+}
+
+.dropdown {
+	display: flex;
+	cursor: pointer;
+}
+
+.dropdown--active {
+	background-color: @accent-color__darken;
+}
+
+.icon-dropdown {
+	margin-left: 4px;
+	transition-duration: 300ms;
+}
+
+.icon-dropdown--rotate {
+	transform-origin: 50% 60%;
+	transform: scale(1, -1);
+	transition-duration: 300ms;
+}
+
+.hover {
+	background-color: @accent-color__darken;
+}
+
+.header-menu__item:hover {
+	background-color: @accent-color__darken;
+}
+.full-header {
+	background-color: @accent-color;
+}
+
+.submenu {
+	display: none;
+	
+}
+
+.submenu-active {
+	display: block;
+	position: absolute;
+	width: 320px;
+	background: #f7f7f7;
+	padding: 20px 0;
+	
+}
+
+.submenu-item {
+	display: flex;
+	font-size: 14px;
+	font-family: @font-regular;
+	padding: 12px 20px;
+}
+
+.submenu-item:hover {
+	background: #fff;
+}
+
+.submenu-link {
+	color: #232323;
+	text-decoration: none;
+	
+}
+
+.submenu-img {
+	margin-right: 12px;
+}
+
+/*=============================================
+=            MEDIA SCREEN            =
+=============================================*/
+
+@media only screen and (max-width: 1440px) {
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 1366px) {
+}
+
+@media only screen and (max-width: 1280px) {
+	.global-menu__item--sale-button {
+		margin-right: 4px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 1024px) {
+	.contact-item-text {
+		display: none;
+	}
+
+	.global-menu__item--sale-button {
+		margin-right: 10px;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.global-menu__item--sale-button {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.global-menu__item--sale-button {
+		display: none;
+	}
+
+	.global-menu__item--allservise-button {
+		display: none;
+	}
+
+	.global-menu__item--navigation {
+		display: none;
+	}
+
+	.global-menu-option {
+		display: none;
+	}
+
+ 
+}
+
+
+@media only screen and (max-width: 680px) {
+ 
+
+	.header-menu__item {
+		display: none;
+	}
+
+	.dropdown {
+		display: block;
+	}
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 414px) {
+	.contact-item--phone {
+		display: none;
+	}
+	.contact-item__icon {
+		display: block;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 375px) {
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+
+
+}
+
+/*=====  End of MEDIA SCREEN  ======*/

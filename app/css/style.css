@@ -1,0 +1,411 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul li {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+legend {
+  color: #000;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*=============================================
+=            Font Roboto            =
+=============================================*/
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('../fonts/RobotoRegular/RobotoRegular.eot');
+  src: url('../fonts/RobotoRegular/RobotoRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/RobotoRegular/RobotoRegular.woff') format('woff'), url('../fonts/RobotoRegular/RobotoRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Awesome Regular';
+  src: url('../fonts/awesome/fa-regular-400.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('../fonts/RobotoBold/RobotoBold.eot');
+  src: url('../fonts/RobotoBold/RobotoBold.eot?#iefix') format('embedded-opentype'), url('../fonts/RobotoBold/RobotoBold.woff') format('woff'), url('../fonts/RobotoBold/RobotoBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto Black';
+  src: url('../fonts/RobotoBlack/Roboto-Black.ttf') format('truetype');
+}
+/*=============================================
+=            Font Roboto end            =
+=============================================*/
+/*=============================================
+=            Доп.меню            =
+=============================================*/
+.global-menu-option {
+  max-width: 100%;
+  background-color: #f2f2f2;
+}
+.global-menu-option__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+.option-menu__link {
+  text-decoration: none;
+  font-family: 'Roboto Regular';
+  font-size: 12px;
+  color: #666666;
+  margin-right: 20px;
+}
+.option-menu__link:hover {
+  font-size: 12px;
+  color: #000;
+}
+.option-menu__link-first {
+  margin-left: auto;
+}
+/*=============================================
+ =            Глобальное меню            =
+ =============================================*/
+.global-menu {
+  max-width: 100%;
+}
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.wrapper-global-menu {
+  background-color: #ffffff;
+}
+.global-menu__item a {
+  text-decoration: none;
+}
+.globa-menu__items {
+  padding: 25px 20px;
+  display: flex;
+  align-items: center;
+}
+.global-menu__item--grow {
+  flex-grow: 1;
+}
+/**
+ *
+ * ЛОГОТИП МЕНЮ
+ *
+ */
+.global-menu__item--logotype {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+}
+.global-menu__logotype-img {
+  max-width: 32px;
+  margin-right: 8px;
+}
+.global-menu__logotype-text {
+  font-family: 'Roboto Black';
+  font-size: 18px;
+  color: #494949;
+}
+.global-menu__logotype-text:hover {
+  color: #000;
+}
+/**
+ *
+ * Кнопка все услуги
+ *
+ */
+.global-menu__item--allservise-button {
+  display: none;
+  background: #148A00;
+  padding: 8px 15px;
+  border-radius: 3px;
+  margin-right: 12px;
+}
+.global-menu__item--allservise-button:hover {
+  background: #0d5700;
+  cursor: pointer;
+}
+.allservise-button-icon {
+  margin-right: 8px;
+}
+.allservise-button-text {
+  font-size: 16px;
+  font-family: 'Roboto Black';
+  color: #fff;
+}
+/**
+  *
+  * Пункты навигации глобальные
+  *
+  */
+.global-menu__item--navigation {
+  padding: 0 12px;
+}
+.global-menu__item--navigation a {
+  font-size: 16px;
+  font-family: 'Roboto Regular';
+  color: #666666;
+}
+.global-menu__item--navigation a:hover {
+  color: #000;
+}
+/**
+ *
+ * ЛЬГОТЫ КНОПКА
+ *
+ */
+.global-menu__item--sale-button {
+  border: 1px solid #bebebe;
+  padding: 6px 16px;
+  border-radius: 3px;
+  font-size: 16px;
+  font-family: 'Roboto Regular';
+  color: #bebebe;
+  cursor: pointer;
+  margin-right: 30px;
+  transition-duration: 0.3s;
+}
+.global-menu__item--sale-button:hover {
+  background-color: #148A00;
+  border: 1px solid #148A00;
+  color: #fff;
+}
+/**
+ *
+ * Адрес и телефон
+ *
+ */
+.global-menu__item--contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: 'Roboto Regular';
+  margin-left: 20px;
+  color: #666666;
+}
+.contact-item--phone a {
+  font-size: 16px;
+  font-family: 'Roboto Bold';
+  margin-left: 8px;
+  color: #6a80e0;
+}
+.contact-item__icon {
+  display: none;
+}
+/*=============================================
+=            Навигация зелёненькая            =
+=============================================*/
+.header-menu {
+  display: flex;
+}
+.header-menu__item {
+  font-size: 16px;
+  font-family: 'Roboto Regular';
+  color: #fff;
+  padding: 16px 20px;
+}
+.header-link {
+  color: #fff;
+  text-decoration: none;
+}
+.dropdown {
+  display: flex;
+  cursor: pointer;
+}
+.dropdown--active {
+  background-color: #0d5700;
+}
+.icon-dropdown {
+  margin-left: 4px;
+  transition-duration: 300ms;
+}
+.icon-dropdown--rotate {
+  transform-origin: 50% 60%;
+  transform: scale(1, -1);
+  transition-duration: 300ms;
+}
+.hover {
+  background-color: #0d5700;
+}
+.header-menu__item:hover {
+  background-color: #0d5700;
+}
+.full-header {
+  background-color: #148A00;
+}
+.submenu {
+  display: none;
+}
+.submenu-active {
+  display: block;
+  position: absolute;
+  width: 320px;
+  background: #f7f7f7;
+  padding: 20px 0;
+}
+.submenu-item {
+  display: flex;
+  font-size: 14px;
+  font-family: 'Roboto Regular';
+  padding: 12px 20px;
+}
+.submenu-item:hover {
+  background: #fff;
+}
+.submenu-link {
+  color: #232323;
+  text-decoration: none;
+}
+.submenu-img {
+  margin-right: 12px;
+}
+/*=============================================
+=            MEDIA SCREEN            =
+=============================================*/
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 1280px) {
+  .global-menu__item--sale-button {
+    margin-right: 4px;
+  }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 1024px) {
+  .contact-item-text {
+    display: none;
+  }
+  .global-menu__item--sale-button {
+    margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .global-menu__item--sale-button {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .global-menu__item--sale-button {
+    display: none;
+  }
+  .global-menu__item--allservise-button {
+    display: none;
+  }
+  .global-menu__item--navigation {
+    display: none;
+  }
+  .global-menu-option {
+    display: none;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .header-menu__item {
+    display: none;
+  }
+  .dropdown {
+    display: block;
+  }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 414px) {
+  .contact-item--phone {
+    display: none;
+  }
+  .contact-item__icon {
+    display: block;
+  }
+}
+/* Custom, iPhone Retina */
+/* Custom, iPhone Retina */
+/*=====  End of MEDIA SCREEN  ======*/
+.full {
+  max-width: 100%;
+}
